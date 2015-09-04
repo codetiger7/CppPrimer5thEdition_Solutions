@@ -18,6 +18,8 @@
 *.qmake.stash
 *.pro.user
 *.pri
+Makefile
+
 
 
 
