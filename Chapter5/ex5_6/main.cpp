@@ -22,15 +22,6 @@ int main()
          : gList[(points-50)/10];
 
 
-//   (points == 100) ? grade = gList[5]
-//                   : (points % 10 < 3 && grade !=  gList[0]) ? grade += '-'
-//         :(points % 10 > 7 && grade != gList[0])
-//         ? grade += '+'
-//         : grade += "";
-
-
-
-
    cout << "Your grade is: " << grade << endl;
 
    return 0;
