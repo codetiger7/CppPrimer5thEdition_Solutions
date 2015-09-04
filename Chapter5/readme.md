@@ -77,7 +77,7 @@ if (!status)
 >  Using an *if-else* statement, write your own version of the program togenerate the letter grade from a numberic grade.
 
 
-##[Exercise 5.6]()
+##[Exercise 5.6](ex5_6/main.cpp)
 
 > Rewrite your grading rogram to use the conditional operator (§ 4.7, p. 151) in place of the *if-else* statement.
 
