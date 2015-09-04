@@ -10,6 +10,8 @@
 ### Above combination will ignore all files without extension ###
 
 
+#folders
+build*
 
 
 
