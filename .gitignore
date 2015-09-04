@@ -18,6 +18,7 @@
 *.qmake.stash
 *.pro.user
 *.pri
+*.DS_Store
 Makefile
 
 
