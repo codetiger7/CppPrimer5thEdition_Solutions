@@ -1,3 +1,11 @@
+
+# Qt Creator folders and files
+*.qmake.stash
+*.pro.user
+*.pri
+
+
+
 # Compiled Object files
 *.slo
 *.lo
