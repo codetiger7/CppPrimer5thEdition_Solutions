@@ -72,7 +72,44 @@ if (!status)
 
 
 
-
 ##[Exercise 5.5](ex5_5.cpp)
 
+>  Using an *if-else* statement, write your own version of the program togenerate the letter grade from a numberic grade.
+
+
+##[Exercise 5.6]()
+
+> Rewrite your grading rogram to use the conditional operator (§ 4.7, p. 151) in place of the *if-else* statement.
+
+##[Exercise 5.7]()
+>Correct the errors in each of the following code fragments:
 >
+
+##[Exercise 5.8]()
+>What is a "dangling *else*"? How are *else* clauses resolved in C++?
+
+
+
+&nbsp;
+
+
+&nbsp;
+
+&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;
+&nbsp;
+
+testing
