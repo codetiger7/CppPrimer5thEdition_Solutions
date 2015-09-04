@@ -72,7 +72,7 @@ if (!status)
 
 
 
-##[Exercise 5.5](/ex5_5/ex5_5.cpp)
+##[Exercise 5.5](ex5_5/ex5_5.cpp)
 
 >  Using an *if-else* statement, write your own version of the program togenerate the letter grade from a numberic grade.
 
