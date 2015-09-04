@@ -2,5 +2,6 @@
 Solutions for C++ Primer 5th Edition
 
 
-- [Chapter 5.Statements](Chapter5/readme.md)
-- 
+- Part I : The Basics
+  - [Chapter 5.Statements](Chapter5/readme.md)
+  - 
