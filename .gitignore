@@ -4,7 +4,7 @@
 # folders
 build*
 .DS_Store
-
+Makefile
 
 
 
@@ -12,8 +12,8 @@ build*
 *.qmake.stash
 *.pro.user
 *.pri
-*.DS_Store
-Makefile
+
+
 
 
 
