@@ -222,6 +222,104 @@ if (!ival)
 
 >Each of the programs highlighted text on page 184 contains a common programming error. Identify and correct each error.
 
+-
+**Question (a)**
+
+```cpp
+(a): 
+
+unsigned aCnt 	= 0;
+unsigned eCnt 	= 0;
+unsinged iouCnt = 0;
+
+char ch = next_text();
+
+switch (ch)
+{
+	case 'a': aCnt++;
+	case 'e': eCnt++;
+	default : iouCnt++;
+}
+```
+- there is no break after the post-increment statements
+- that means that if *case 'a':* gets a match, both *aCnt*, *eCnt*, and *iouCnt* will be incremented.
+- also while not directly a fault it is less resource demanding and clearer code to pre-increment, so do that  unless there is a specific reason to post-increment.
+- fix it is easy we just add break; statements like so:
+
+-
+**Answer (a)**
+
+```cpp
+(a): 
+
+unsigned aCnt 	= 0;
+unsigned eCnt 	= 0;
+unsinged iouCnt = 0;
+
+char ch = next_text();
+
+switch (ch)
+{
+	case 'a':
+	 ++aCnt;
+	 break;
+	case 'e':
+	 ++eCnt;
+	 break;
+	default : 
+	 ++iouCnt;
+	 break
+}
+```
+-
+**Question (b)**
+
+```cpp
+
+unsigned index = some_value();
+
+switch (index)
+{
+	case 1:
+		int ix = get_value();
+		ivec[ix] = index;
+		break;
+	default:
+		ix = ivec.size()-1;
+		ivec[ix] = index;
+```
+-
+
+**Answer (b)**
+
+- define initializing a value in a case is not legal so *int ix = get_value();*  breaks the rules
+- one way to solve this issue is to define and initialize *ix* outside the switch ctrl structure
+
+
+```cpp
+ 
+unsigned index = 1;
+
+// define and initialize ix outside case
+// 
+int ix = 2;
+
+   switch (index)
+   {
+      case 1:
+      	  ix = get_value()
+         ivec[ix] = index;
+         break;
+      default:
+         ix = ivec.size()-1;
+         ivec[ix] = index;
+   }
+
+```
+-
+
+
+
 
 
 
