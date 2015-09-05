@@ -208,15 +208,15 @@ if (!ival)
 
 
 
-## Exercise 5.11
+## [Exercise 5.11](ex5_11/main.cpp)
 
 >Modify our vowel-counting program so that it also counts the number of blank spaces, tabs, and newlines read.
 >
 
-## Exercise 5.12
+## [Exercise 5.12](ex5_12/main.cpp)
 
 >Modyfy our vowel-counting program so that it counts the number of occurences of the following two-character sequences: *ff*, *fl*, and *fi*.
->
+
 
 ## Exercise 5.13
 

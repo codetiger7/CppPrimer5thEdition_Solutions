@@ -1,4 +1,4 @@
-// Exercise 5.11
+// Exercise 5.12
 
 #include <iostream>
 
@@ -22,10 +22,14 @@ int main()
   unsigned tabCnt    = 0;
   unsigned nwlCnt    = 0;
 
+  unsigned seqCnt = 0;
 
-  char ch;
+  char ch   = 0;
+  char ckch = 0;
+
   while (cin >> noskipws >> ch)
   {
+
      // if ch is a vowel, increment the appropriate counter
      switch (ch)
      {
@@ -58,20 +62,29 @@ int main()
      case '\n':
         ++nwlCnt;
         break;
+     case 'f':
+     {
+        cin >> ckch;
+        if (ckch == 'f' || ckch == 'l' || ckch == 'i')
+           ++seqCnt;
+        else
+           cin.putback(ckch);
+     }
      default:
         break;
      }
   }
 
      // print results
-     cout << "Num a:\t" << aCnt << '\n'
-          << "Num e:\t" << eCnt << '\n'
-          << "Num i:\t" << iCnt << '\n'
-          << "Num o:\t" << oCnt << '\n'
-          << "Num u:\t" << uCnt << '\n'
+     cout << "Num a:\t" << aCnt     << '\n'
+          << "Num e:\t" << eCnt     << '\n'
+          << "Num i:\t" << iCnt     << '\n'
+          << "Num o:\t" << oCnt     << '\n'
+          << "Num u:\t" << uCnt     << '\n'
           << "Spc  :\t" << spaceCnt << '\n'
-          << "Tabs :\t" << tabCnt << '\n'
-          << "Nwl  :\t" << nwlCnt << endl;
+          << "Tabs :\t" << tabCnt   << '\n'
+          << "Nwl  :\t" << nwlCnt   << '\n'
+          << "Seq  :\t" << seqCnt   << endl;
 
 
 
