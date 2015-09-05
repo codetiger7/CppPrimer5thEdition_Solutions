@@ -18,13 +18,8 @@ int main()
   unsigned oCnt = 0;
   unsigned uCnt = 0;
 
-  unsigned spaceCnt  = 0;
-  unsigned tabCnt    = 0;
-  unsigned nwlCnt    = 0;
-
-
   char ch;
-  while (cin >> noskipws >> ch)
+  while (cin >> ch)
   {
      // if ch is a vowel, increment the appropriate counter
      switch (ch)
@@ -49,15 +44,6 @@ int main()
      case 'U':
         ++uCnt;
         break;
-     case ' ':
-        ++spaceCnt;
-        break;
-     case '\t':
-        ++tabCnt;
-        break;
-     case '\n':
-        ++nwlCnt;
-        break;
      default:
         break;
      }
@@ -68,10 +54,7 @@ int main()
           << "Num e:\t" << eCnt << '\n'
           << "Num i:\t" << iCnt << '\n'
           << "Num o:\t" << oCnt << '\n'
-          << "Num u:\t" << uCnt << '\n'
-          << "Spc  :\t" << spaceCnt << '\n'
-          << "Tabs :\t" << tabCnt << '\n'
-          << "Nwl  :\t" << nwlCnt << endl;
+          << "Num u:\t" << uCnt << endl;
 
 
 
