@@ -319,6 +319,68 @@ int ix = 2;
 -
 
 
+**Question (d)**
+
+```cpp
+unsigned ival = 512;
+unsigned jval = 1024;
+unsigned kval = 4096;
+
+unsigned bufsize;
+unsigned swt = get_bufCnt();
+
+switch (swt)
+{
+	case ival:
+		bufsize = ival * sizeof(int);
+		break;
+	
+	case jval:
+		bufsize = jval * sizeof(int);
+		break;
+	
+	case kval:
+		bufsize = kval * sizeof(int);
+		break;
+}
+```
+
+
+**Answer (d)**
+
+- the *case* labes must be **integral expressions** that are also **constants**
+- currently the case lables are not *constants* we can fix it by adding const to their definitions:
+
+
+
+```cpp
+
+/// adding const fixes the case label checks
+const unsigned ival = 512;
+const unsigned jval = 1024;
+const unsigned kval = 4096;
+
+unsigned bufsize;
+
+// adding const here is better practice
+// since we do not change swt
+const unsigned swt = get_bufCnt();
+
+switch (swt)
+{
+	case ival:
+		bufsize = ival * sizeof(int);
+		break;
+	
+	case jval:
+		bufsize = jval * sizeof(int);
+		break;
+	
+	case kval:
+		bufsize = kval * sizeof(int);
+		break;
+}
+```
 
 
 
