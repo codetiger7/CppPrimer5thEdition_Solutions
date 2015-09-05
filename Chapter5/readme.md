@@ -203,7 +203,7 @@ if (!ival)
 
 
 
-## Exercise 5.10
+## [Exercise 5.10](ex5_10/main.cpp)
 >There is one problem with our vowel-counting program as we've implemented it: It doesn't count capital letters as vowels. Write a program that counts both lower- and uppercase letters as the appropriate vowel--that is, your program should count both *'a'* and *'A'* as a part of *aCnt*, and so forth.
 
 
