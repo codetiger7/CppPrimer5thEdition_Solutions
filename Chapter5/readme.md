@@ -469,16 +469,58 @@ for (int ix = 0; ix != sz; ++ix)	  { /* ... */ }
 3. If you could only use one loop, which would you choose?
 4. Why?
 
+
+**Answer:**
+
 - [idiom](https://en.wikipedia.org/wiki/Programming_idiom#Examples_of_simple_idioms)
 - what is an idiomatic use of each loop (idiomatic) ?
-	- seems like it if different ways of doing an operation leading to the same result.
-	- so I need to write two loops in different ways leading tot he same result.
+
+
+- Ok now we know what an idiomatic use of a loop is we can write.
+
+
+*Example of idiomatic use for each loop:*
+
+```cpp
+
+int i = 0;
+while( i != 5)
+{
+	cout << i << endl;
+	++i;
+}
+
+
+for(int j = 10; j != 5; --j)
+{
+	cout << j << endl;
+}
+
+
+// rewriting
+
+int i = 10;
+while (i != 5)
+{
+	cout << i << endl;
+	--i;
+}
+
+
+for(int j = 0; j != 5; ++j)
+{
+	cout << j << endl;
+}
+```
+
+- If i could only choose one loop I would use the while loop
+- It seems more basic and more easily applicable to everything
 
 
 
-## Exercise 5.17(ex5_17/main.cpp)
+## [Exercise 5.17](ex5_17/main.cpp)
 
-> Given two *vector*s of *int*s, write a program to determine whether one *vector* is a prefix of theother. For *vector*s of unequal length, compare the number of elements of the smaller *vector*. For esxample, given the *vector*s containing 0,1,1, and 2 and 0,1,1,23,5,8 respectively your program should return true.
+> Given two *vector*s of *int*s, write a program to determine whether one *vector* is a prefix of the other. For *vector*s of unequal length, compare the number of elements of the smaller *vector*. For esxample, given the *vector*s containing 0,1,1, and 2 and 0,1,1,23,5,8 respectively your program should return true.
 
 
 
