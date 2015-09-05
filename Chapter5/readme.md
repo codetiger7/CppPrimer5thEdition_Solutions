@@ -197,7 +197,7 @@ if (!ival)
 - Note: you can change which *if* an *else* belongs to by using curly braces.
 
 
-## Exercise 5.9 
+## [Exercise 5.9](ex5_9/main.cpp)
 
 >Write a program using a series of *if* statements to count the number of vowels in the text read from *cin*.
 
