@@ -381,10 +381,10 @@ switch (swt)
 		break;
 }
 ```
-
 -
 
 ## [Exercise 5.14](ex5_14/main.cpp)
+
 > Write a program to read *string*s from standard input looking for duplicated words.
 > 
 >  The program should find places in the input where one word is followed immediately by itself. Keep track of the largest number of times a single repetition occurs and which word is repeated. Print the maximum number of duplicates, or else print a message saying that no word was repeated. For example, if the input is :
@@ -393,6 +393,114 @@ switch (swt)
 > 
 > the output should indicate that the word *now* occured three times
 
+-
+
+## Exercise 5.15
+
+> Explain each of the following loops. Correct any problems you detect.
+> 
+
+-
+**Question (a)**
+
+```cpp
+(a)
+for (int ix = 0; ix != sz; ++ix)		{ /* ... */ }
+
+if (ix != sz)
+	// ...
+```
+
+**Answer (a)**
+
+- the for loop check that *ix* is unequal to *size*
+- the *if* check after the for loop doesnt make any sense
+- this because the *if* will never be true since the *for* loop will only end once *ix == size* unless there is a some sort of escape in the body.
+- more importantly sinze *ix* was defined in the scope of the for, it will be out of scope once we get to the if and hence we have an error.
+- this can be fixed:
+
+```cp
+
+(a)
+int ix = 0;
+for (; ix != sz; ++ix)		{ /* ... */ }
+
+if (ix != sz)
+	// ...
+```
+-
+
+**Question (b)**
+
+```cpp
+(b)
+int ix;
+for (ix != sz; ++ix)	{ /* ... */ }
+```
+
+**Answer (b)**
+
+- *ix* is never initialized so the condition *ix != sz* is undefined
+- Fix this by initializing ix;
+
+```cpp
+(b)
+// initialize ix so condition: ix != sz, is not undefined
+int ix = 0;
+
+for (ix != sz; ++ix)	{ /* ... */ }
+```
+-
+
+**Question (c)**
+
+```cpp
+(c)
+for (int ix = 0; ix != sz; ++ix, ++ sz)	  { /* ... */ }
+
+```
+
+**Answer (c)**
+
+- there is a space between the preincrement operator *++* and the *sz* variable
+- this for loop is infinite as long as *sz ≠ 0*
+- the reason is that when *ix* increases by 1, then so does *sz*
+- a simple fix can be made by removing *++ sz*
+
+
+```cpp
+
+(c)
+for (int ix = 0; ix != sz; ++ix)	  { /* ... */ }
+```
+-
+
+## Exercise 5.16
+
+> The *while* loop is particulary good executing while some conditions holds; for example, when we need to read values until end-of-life. The *for* loop is generally thought of as a step loop: An index steps through a range of values in a collection. Write an idiomatic use of each loop and then rewrite each using the other loop construct. If you could only use one loop, which would you choose? Why?
+
+**Question/Assignment:**
+
+1. Write an idiomatic use of each loop
+2. and then rewrite each using the other loop construct.
+3. If you could only use one loop, which would you choose?
+4. Why?
+
+- [idiom](https://en.wikipedia.org/wiki/Programming_idiom#Examples_of_simple_idioms)
+- what is an idiomatic use of each loop (idiomatic) ?
+	- seems like it if different ways of doing an operation leading to the same result.
+	- so I need to write two loops in different ways leading tot he same result.
+
+
+
+## Exercise 5.17(ex5_17/main.cpp)
+
+> Given two *vector*s of *int*s, write a program to determine whether one *vector* is a prefix of theother. For *vector*s of unequal length, compare the number of elements of the smaller *vector*. For esxample, given the *vector*s containing 0,1,1, and 2 and 0,1,1,23,5,8 respectively your program should return true.
+
+
+
+
+
 
 
 
@@ -418,6 +526,73 @@ switch (swt)
 
 
 
+
+
+
+
+
+--------
+end of chapther 5
+------
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+0
+0
+0
+0
+
+0
+
+
+0
+ 
+0
+
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+
+00
+
+00
+0
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
 
 
 
