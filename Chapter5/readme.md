@@ -1,21 +1,4 @@
 
- &nbsp; 
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
-
-
-
 ##Exercise 5.1
 
 >*a) What is a null statement?*
@@ -503,6 +486,7 @@ for (int ix = 0; ix != sz; ++ix)	  { /* ... */ }
 
 
 
+$$\frac{N}{\sqrt{78}}$$
 
 
 
@@ -510,89 +494,6 @@ for (int ix = 0; ix != sz; ++ix)	  { /* ... */ }
 
 
 
-
-
-
-
-
-
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
- &nbsp;
-
-
-
-
-
-
-
-
-
---------
-end of chapther 5
-------
-
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-
-0
-0
-0
-0
-
-0
-
-
-0
- 
-0
-
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-
-00
-
-00
-0
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
 
 
 
