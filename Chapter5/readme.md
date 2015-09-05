@@ -208,7 +208,7 @@ if (!ival)
 
 
 
-## Exercise 5.11
+## [Exercise 5.11](ex5_11/main.cpp)
 
 >Modify our vowel-counting program so that it also counts the number of blank spaces, tabs, and newlines read.
 >
