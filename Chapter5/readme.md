@@ -620,7 +620,9 @@ do
 > Revise the program from the exercise in § 5.5.2 (p. 191) to that it looks only for duplicated words that start with an uppercase letter.
 
 
+## [Exercise 5.22](ex5_22/main.cpp)
 
+> The last example in this section that jumped back to *begin* could be better writtenusing a loop. Rewrite the code to eliminate the *goto*.
 
 
 
