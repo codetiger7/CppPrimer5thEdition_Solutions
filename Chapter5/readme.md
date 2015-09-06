@@ -615,6 +615,11 @@ do
 
 >Write a program to read a sequence of *string*s from the standard input until either the same word occurs twice in succession or all the words hav been read. Use a *while* loop to read the text one word at a time. Use the *break* statement to terminate the loop if a word occurs twice in succession. Print the word if it occurs twice in succession, or else print a message saying that no word was repeated.
 
+## [Exercise 5.21])ex5_21/main.cpp)
+
+> Revise the program from the exercise in § 5.5.2 (p. 191) to that it looks only for duplicated words that start with an uppercase letter.
+
+
 
 
 
