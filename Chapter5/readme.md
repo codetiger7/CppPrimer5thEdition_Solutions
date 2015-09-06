@@ -523,12 +523,103 @@ for(int j = 0; j != 5; ++j)
 > Given two *vector*s of *int*s, write a program to determine whether one *vector* is a prefix of the other. For *vector*s of unequal length, compare the number of elements of the smaller *vector*. For esxample, given the *vector*s containing 0,1,1, and 2 and 0,1,1,23,5,8 respectively your program should return true.
 
 
+## Exercise 5.18
+> Explaine each of the following loops. Correct andy problems you detect.
+
+**Question (a)**
+
+```cpp
+(a)
+
+do
+	int v1, v2;
+	cout << "Please enter two number to sum:";
+	if (cin >> v1 >> v2)
+		cout << "Sum is: " << v1 + v2 << endl;
+
+while (cin);
+```
+
+-
+**Answer (a)**
+
+- there is no curly braces containing the body of the do while
+
+
+```cpp
+do
+{
+	int v1 = 0;
+	int v2 = 0;
+	cout << "Please enter two number to sum:";
+	
+	if (cin >> v1 >> v2)
+		cout << "Sum is: " << v1 + v2 << endl;
+		
+} while (cin);
+```
+-
+
+**Question (b)**
+
+```cpp
+do {
+	// ...
+} while (int ival = get_response());
+```
+
+**Answer (b)**
+
+- it is not legal to define a variable in the do while header
+- this is because it can't really be used anywhere.
+
+```cpp
+do
+{
+	// ...
+} while (get_response())
+```
+-
+
+**Question (c)**
+
+```cpp
+do {
+	int ival = get_response();
+} while (ival);
+```
+**Answer (c)**
+
+- the ival defined in the do while body is out of scope in the do while header.
+- solve by declaring outside the do while structure
+
+```cpp
+int ival = 0;
+
+do
+{
+	ival = get_response();
+} while (ival);
+```
+
+-
+
+
+## [Exercise 5.19](ex5_19/main.cpp)
+
+> Write a program that uses a *do while* loop to repetively request two *string*s from the user and report which *string* is less than the other.
 
 
 
 
 
-$$\frac{N}{\sqrt{78}}$$
+
+
+
+
+
+
+
 
 
 
