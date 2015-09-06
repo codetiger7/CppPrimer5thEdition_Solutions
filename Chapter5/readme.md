@@ -629,6 +629,25 @@ do
 
 
 
+## [Exercise 5.23](ex5_23/main.cpp)
+
+> Write a program that reads two integers from the standard input nad prints the result of dividing the first number by the second.
+
+
+## [Exercise 5.24](ex5_24/main.cpp)
+
+> Revise your program to throw an exception if the second number is zero. Test your program with a zero input to see what happens on your system if you don't *catch* an exception.
+
+
+## Exercise 5.25](ex5_25/main.cpp)
+
+> Revise your program from the previous exercise to use a *try* block to *catch* the expection. The *catch* clause should print a message to the user and ask them to supply a new number and repeat the code inside the *try*.
+
+
+
+
+
+
 
 
 
