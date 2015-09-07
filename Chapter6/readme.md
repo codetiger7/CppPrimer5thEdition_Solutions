@@ -106,6 +106,14 @@ double square(double x)
 > Write and test your own version of *fact*.
 
 
+## [Exercise 6.4](ex6_4/main.cpp)
+
+> Write a function that interacts with the user, asking for a number and generating the factorial of that number. Call this function from *main*.
+
+## [Exercise 6.5](ex6_5/main.cpp)
+
+> Write a function to return the absolute value of it's argument.
+
 
 
 
