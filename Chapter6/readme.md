@@ -115,5 +115,58 @@ double square(double x)
 > Write a function to return the absolute value of it's argument.
 
 
+## Exercise 6.6
+
+> Explain the differences between a parameter, a local variable, and a local static variable. Give an example of a function in which each might be useful.
+
+- a parameter is a local variable that is initialized in the function header by arguments
+- a local variale is an object that is initialized only if its definition contains an initializer.
+- a local static variable is a variable that does keeps it value after the function call is over.
+
+
+**parameter**
+
+```cpp
+double
+convertDollarsToCrowns(double dollars, double convRate) //useful parameters
+{
+	return dollars * convRate;
+}
+```
+
+**local variable**
+
+```cpp
+int 
+factorial(int num)
+{
+	fact = 1;	// useful local variable
+	
+	while( num > 1)
+		fact *= num--;
+}
+```
+
+
+**local static variable**
+
+```cpp
+int lastValue(int val)
+{
+	// static local value useful for implementing memory 
+	static int last  = 0;
+	
+	int temp = last;
+	last = val;
+	
+	return temp;
+}
+
+```
+
+
+## [Exercise 6.7](ex6_7/main.cpp)
+
+> Write a function that returns 0 when it is first called and then generates numbers in sequence each time it is called again.
 
 
