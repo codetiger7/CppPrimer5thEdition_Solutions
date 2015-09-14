@@ -273,3 +273,36 @@ string::size_type find_char(const string& s,
 
 
 
+## Exercise 6.16
+
+> The following function, although legal, is less useful than it might be. Identify and correct the limitation on this function:
+
+```cpp
+bool is_empty(string& s) { return s.empty(); }
+```
+
+- first of all since it does not change the string is should be a const reference.
+- second its a function that might be better of just using s.empty() directly.
+
+
+## [Exercise 6.17](ex6_17/main.cpp)
+## [Exercise 6.17b](ex6_17b/main.cpp)
+
+> Write a function to determine whether a *string* contains any capital letters. Write a function to change a *string* to all lowercase. Do the parameters you used in these functions have the same type? If so, why? If not, why not?
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Exercise 6.18
+
+> Write declarations for each of the following functions. When you write these declarations, use the name of the function to indicate what the function does.
+
