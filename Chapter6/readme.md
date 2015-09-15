@@ -296,16 +296,81 @@ bool is_empty(string& s) { return s.empty(); }
 
 
 
-
-
-
-
-
-
-
-
-
 ## Exercise 6.18
 
 > Write declarations for each of the following functions. When you write these declarations, use the name of the function to indicate what the function does.
+
+
+**(a)** A function named *compare* that returns a *bool* and has two parameters that are references to a class named *matrix*.
+
+```cpp
+bool compare( const Matrix&, const Matrix&);
+```
+
+**(b)** A function named *change_val* that returns a *vector<int>* iterator and takes two parameters: One is an *int* and the other is an iterator for a *vector<int>*.
+
+```cpp
+vector<int>::iterator change_val(int v, vector<int>::iterator it);
+```
+
+## [Exercise 6.19](ex6_19/main.cpp)
+
+> Given the follwoing declarations, determine which calls are legal and which are illegal. For those that are illegal, explain why.
+
+```cpp
+double calc(double);
+
+int count(const string&, char);
+
+int sum(vector<int>::iterator, vector<int>::iterator, int);
+
+vector<int> vec(10);
+```
+-
+**Question (a)** *calc(23.4, 55.1);
+
+
+**Answer (a)**
+
+- illegal: trying to use function with more parameters than is defined
+
+-
+**Question (b)** *count("abcda", 'a');*
+
+**Answer (b)**
+
+- legal
+
+-
+**Question (c)** *calc(66);*
+
+**Answer (c)** 
+
+- legal: is impl conv to double.
+
+-
+
+**Question (d)** *sum(vec.begin(), vec.end(), 3.8);*
+
+**Answer (d)**
+
+- legal: with truncated 3.8; (implicitly converted to int)
+
+
+## Exercise 6.20
+
+> When should reference parameters be references to *const* ?
+> What happens if we make a parameter a plain reference when it could be a reference to *const* ?
+
+
+
+- a parameter should be a reference to *const*, **unless** it is being changed inside the function.
+
+- what happens if we make a parameter a plain reference when it could be a reference to const is:
+	- we make the code unclear, as users will think that the reference is changed inside the function
+	- we make the code less usable: as now the function can not be used by *const* arguments. (if parameter had been a ref to *const* the function would have handle both *const* and plain arguments.
+
+ 
+
+
 
