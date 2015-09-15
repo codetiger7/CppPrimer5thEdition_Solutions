@@ -290,6 +290,9 @@ bool is_empty(string& s) { return s.empty(); }
 
 > Write a function to determine whether a *string* contains any capital letters. Write a function to change a *string* to all lowercase. Do the parameters you used in these functions have the same type? If so, why? If not, why not?
 
+- the parameter in the first case is a const string ref, while in the second it's a plain *string&*.
+- They are not the same because in the second version we want to change a string to all lower letters while in the first we are only looking to detect capital letters.
+
 
 
 
