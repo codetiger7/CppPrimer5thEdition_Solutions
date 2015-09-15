@@ -327,35 +327,26 @@ int sum(vector<int>::iterator, vector<int>::iterator, int);
 vector<int> vec(10);
 ```
 -
-**Question (a)** *calc(23.4, 55.1);
-
-
-**Answer (a)**
+**(a)** *calc(23.4, 55.1);*
 
 - illegal: trying to use function with more parameters than is defined
 
 -
-**Question (b)** *count("abcda", 'a');*
-
-**Answer (b)**
+**(b)** *count("abcda", 'a');*
 
 - legal
 
 -
-**Question (c)** *calc(66);*
-
-**Answer (c)** 
+**(c)** *calc(66);*
 
 - legal: is impl conv to double.
 
 -
-
-**Question (d)** *sum(vec.begin(), vec.end(), 3.8);*
-
-**Answer (d)**
+**(d)** *sum(vec.begin(), vec.end(), 3.8);*
 
 - legal: with truncated 3.8; (implicitly converted to int)
 
+-
 
 ## Exercise 6.20
 
