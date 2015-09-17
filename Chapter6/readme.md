@@ -362,6 +362,12 @@ vector<int> vec(10);
 	- we make the code less usable: as now the function can not be used by *const* arguments. (if parameter had been a ref to *const* the function would have handle both *const* and plain arguments.
 
  
+## [Exercise 6.21](ex6_21/main.cpp)
+
+> Write a function that takes an *int* and a pointer to an *int* and returns the larger of the *int* value or the value to which the pointer points. What type should you use for the pointer?
+
+- you should use a *const int* * (a pointer to const int)
+
 
 
 
