@@ -366,6 +366,14 @@ vector<int> vec(10);
 
 > Write a function that takes an *int* and a pointer to an *int* and returns the larger of the *int* value or the value to which the pointer points. What type should you use for the pointer?
 
+```cpp
+int
+largest( const int val1, const int* pVal2 )
+{
+  return (val1 > *pVal2) ? val1 : *pVal2;
+}
+```
+
 - you should use a *const int* * (a pointer to const int)
 
 
