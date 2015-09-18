@@ -377,5 +377,11 @@ largest( const int val1, const int* pVal2 )
 - you should use a *const int* * (a pointer to const int)
 
 
+## [Exercise 6.22](ex6_22/main.cpp)
+
+> Write a function to swap to *int* pointers.
+
+
+
 
 

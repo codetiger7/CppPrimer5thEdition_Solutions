@@ -14,7 +14,6 @@ int main()
 {
    cout << "\n\n\n" << endl;
 
-
    int a = 10;
    int b = 30;
    int* pb = &b;
@@ -24,10 +23,6 @@ int main()
    cout << endl;
 
    cout << "Largest is: " << largest(b, pa) << endl;
-
-
-
-
 
    return 0;
 }
