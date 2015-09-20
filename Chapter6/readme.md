@@ -416,5 +416,7 @@ void print(const int (&ia)[10])
 }
 ```
 
+## [Exercise 6.25](ex6_25/main.cpp)
 
+> Wrtie a *main* function that takes two arguments. Concatenate the supplied arguments and printe the resulting *string*.
 
