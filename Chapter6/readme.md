@@ -421,7 +421,7 @@ void print(const int (&ia)[10])
 > Write a *main* function that takes two arguments. Concatenate the supplied arguments and printe the resulting *string*.
 
 
-## [Exercise 6.26[(ex6_26/main.cpp)
+## [Exercise 6.26](ex6_26/main.cpp)
 
 > Write a program that accepts the options presented in this section. Print the values of the arguments passed to main.
 
