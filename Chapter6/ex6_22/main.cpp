@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void pSwap(int p1, int& p2)
+void pSwap(int*& p1, int*& p2)
 {
    int* temp = p1;
    p1 = p2;
