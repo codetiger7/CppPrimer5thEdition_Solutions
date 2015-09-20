@@ -393,11 +393,23 @@ largest( const int val1, const int* pVal2 )
 
 ## Exercise 6.24
 
-> Explain the behaviour of the following function. If there are problems in the code, explain what they are and how you mgiht fix them.
+> Explain the behaviour of the following function. If there are problems in the code, explain what they are and how you might fix them.
 
 
 ```cpp
 void print(const int ia[10])
+{
+	for (size_t i = 0; i != 10; ++i)
+		cout << ia[i] << endl;
+}
+```
+
+- function takes a pointer to const int
+- we cant control the size of the array to which the pointer points when passing a pointer.
+- use a reference to fix this
+
+```cpp
+void print(const int (&ia)[10])
 {
 	for (size_t i = 0; i != 10; ++i)
 		cout << ia[i] << endl;
