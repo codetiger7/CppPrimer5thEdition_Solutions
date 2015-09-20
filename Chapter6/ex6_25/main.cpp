@@ -1,10 +1,20 @@
-#include <iostream>
+// Exercise 6.25
 
+#include <iostream>
+#include <string>
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-    cout << "Hello World!" << endl;
+    string a = argv[1];
+    string b = argv[2];
+
+
+
+    cout << "\n\n";
+
+    cout << b + a << endl;
+
     return 0;
 }
 
