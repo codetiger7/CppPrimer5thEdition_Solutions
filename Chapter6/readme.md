@@ -427,4 +427,22 @@ void print(const int (&ia)[10])
 
 
 
+## [Exercise 6.27](ex6_27/main.cpp)
+
+> Write a function that takes an *initializer_list<int>* and produces the sum of the elements in the list.
+
+## [Exercise 6.28](ex6_28/main.cpp)
+
+> In the second version of *error_msg* that has an *ErrCode* parameter, what is the type of *elem* in the *for* loop?
+
+- const reference to string ( const string&)
+
+## Exercise 6.29
+
+> When you use an *initializer_list* in a range *for* would you ever use a reference as the loop control variable? If so why if not, wy not?
+
+- you would when the initializer list has elements that are to costly to copy
+
+
+
 
