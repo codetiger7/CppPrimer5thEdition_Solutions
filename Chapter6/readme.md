@@ -382,6 +382,27 @@ largest( const int val1, const int* pVal2 )
 > Write a function to swap to *int* pointers.
 
 
+## [Exercise 6.23](ex6_23/main.cpp)
+
+> Write your own versions of each of the *print* functions presented in this section. Call each of these functions to print *i* and *j* defined as follows:
+
+*int i = 0, j[2] =  {0, 1};
+
+
+
+
+## Exercise 6.24
+
+> Explain the behaviour of the following function. If there are problems in the code, explain what they are and how you mgiht fix them.
+
+
+```cpp
+void print(const int ia[10])
+{
+	for (size_t i = 0; i != 10; ++i)
+		cout << ia[i] << endl;
+}
+```
 
 
 
