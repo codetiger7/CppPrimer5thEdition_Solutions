@@ -474,3 +474,23 @@ error: non-void function 'str_subrange' should return a value
 - it takes in a pointer to an int, and an int
 - it then returns a reference (left side reference) to a position in an array of ints.
 
+## [Exercise 6.33](ex6_33/main.cpp)
+
+> Write a recursive function to print the contents of a *vector*.
+
+
+## Exercise 6.34 
+
+> What would happen if the stopping condition in *factorial* were
+> *if (val != 0)*?
+
+- a few different things :)
+
+
+## Exercise 6.35
+
+> In the call to *factorial*, why did we pass *val - 1* rather that *val--*?
+
+- Because of predecence *val--* the decrement operator (--) would never take effect.
+
+
