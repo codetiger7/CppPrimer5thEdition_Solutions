@@ -444,6 +444,33 @@ void print(const int (&ia)[10])
 
 - you would when the initializer list has elements that are to costly to copy
 
+## [Exercise 6.30](ex6_30/main.cpp)
+
+> Compile the version of *str_subrange* as presented on page 223 to see what your compiler does with the indicated errors.
+
+```
+error: non-void function 'str_subrange' should return a value 
+
+[-Wreturn-type]
+            return; // error
+            ^
+```
+
+## Exercise 6.31
+
+> When is it valid to return a reference?
+> 
+> A reference to const?
+
+- The object reffered has to exist before the function was called.
 
 
+## [Exercise 6.32](ex6_32/main.cpp)
+
+> Indicate whether the following function is legal. If so, explain what it does; if not, correct any errors and then explain it.
+
+- It is legal
+
+- it takes in a pointer to an int, and an int
+- it then returns a reference (left side reference) to a position in an array of ints.
 
