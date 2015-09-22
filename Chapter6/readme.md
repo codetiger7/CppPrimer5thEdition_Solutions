@@ -649,7 +649,53 @@ init(14, '*');
 
 > Give the second parameter of *make_plural*  (§6.3.2, p. 224) a default argument  of *'s'*. Test your program by printing singular and plural versions of the words *success* and *failure*.
 
-- 
+
+## Exercise 6.43
+
+> Which of the following declarations and definitions would you put in a header?
+> In a source file?
+> Explain why.
+
+**(a)**
+
+```cpp
+inline bool eq(const BigInt&, const BigInt&) { ... }
+```
+**(b)**
+
+```cpp
+void putValues(int *arr, int size);
+```
+
+**Answers:**
+
+- would put the *eq()* in a header file
+	- because it is inlined
+- I would put the *putValues()* function declaration in a header, and the body in a source file.
+	- because it is the clean way of dealing with prototype and function in.
+
+
+## [Exercise 6.44](ex6_46/main.cpp)
+
+> Rewrite the *isShorter* function from § 6.2.2 (p. 211) to be *inline*
+
+
+```cpp
+inline bool 
+isShorter(const string& s1, const string& s2)
+{
+	return s1.size() < s2.size();
+}
+```
+
+## [Exercise 6.45](ex6_45/main.cpp)
+
+> Review the programs you've written for the earlier exercises and decide whether they should be defined as *inline*. If so, do so.
+> If not, explaing why they should not be inline.
+
+
+
+
 
 
 
