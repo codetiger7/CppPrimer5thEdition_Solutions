@@ -583,3 +583,68 @@ double* reset(double*);
 
 
 
+
+## Exercise 6.40
+
+> Which, if either, of the following declarations are errors?
+> Why?
+
+**(a)**
+
+```cpp
+int ff(int a, int b = 0, int c = 0);
+```
+
+**(b)**
+
+```cpp
+char *init(int ht = 24, int wd, char bkcgrnd);
+```
+
+**Answer:**
+
+- Declaration **(b)** is an error
+- Because if a parameter is default initialized, all parameters following must also be default initialized.
+
+-
+
+## Exercise 6.41
+
+> Which, if any, of the follwing calls are illegal?
+> Why?
+> Which, if any, are legal but unlikely to math the programmer's intent?
+> Why?
+
+
+
+```cpp
+char *init(int ht, int wd = 80, char bckgrnd = ' ');
+```
+**(a)**
+
+```cpp
+init();
+``` 
+
+**(b)**
+```cpp
+init(24, 10);
+```
+
+**(c)**
+```cpp
+init(14, '*');
+```
+
+
+**Answer:**
+
+- call **(a)** is illegal
+- Because, *init()* function requires an argument for the first parameter, but the call does not include one.
+- call **(c)** legal but unlikely to math programmer's expectations
+- because the *char* is converted to an int, and if the programmer intended to set **witdh** using an int would normally be clearer and more convenient.
+
+
+
+
+
