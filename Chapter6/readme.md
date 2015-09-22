@@ -540,4 +540,46 @@ decltype(odd)& arrPtr(int i)
 }
 ```
 
+## Exercise 6.39
+
+> Explain the effect of the second declaration in each one of the following sets of declarations. Indicate which, if any, are illegal.
+
+
+**(a)**
+
+```cpp
+int calc(int, int);
+
+int calc(const int, const int);
+```
+- The second declaration is just a redeclaration of the first as far as the compiler is concerned.
+
+- It declares the function with top level consts
+
+-
+
+**(b)**
+
+```cpp
+int get();
+
+double get();
+```
+
+- The function with *double* as a return type is illegal
+- You cannot overload functions with only different return types.
+
+-
+
+**(c)**
+
+```cpp
+int* reset(int*);
+
+double* reset(double*);
+```
+
+- The effect fo the second declaration is that the compiler sees the function as overloaded.
+
+
 
