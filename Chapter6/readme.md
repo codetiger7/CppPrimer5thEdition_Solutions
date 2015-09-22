@@ -645,6 +645,12 @@ init(14, '*');
 - because the *char* is converted to an int, and if the programmer intended to set **witdh** using an int would normally be clearer and more convenient.
 
 
+## [Exercise 6.42](ex6_42/main.cpp)
+
+> Give the second parameter of *make_plural*  (§6.3.2, p. 224) a default argument  of *'s'*. Test your program by printing singular and plural versions of the words *success* and *failure*.
+
+- 
+
 
 
 
