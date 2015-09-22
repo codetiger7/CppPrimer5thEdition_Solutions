@@ -493,4 +493,51 @@ error: non-void function 'str_subrange' should return a value
 
 - Because of predecence *val--* the decrement operator (--) would never take effect.
 
+## Exercise 6.36
+
+> Write the declaration for a function that returns a reference
+> to an array of ten *string*s, without using either a trailing return,
+> *decltype*, or a type alias
+
+```cpp
+std::string (& funct())[10]
+```
+
+## Exercise 6.37
+
+> Write three additional declarations for the function in the previous exercise. One should use a type alias, one should se a trailing return, and the third should use *decltype*.
+
+> Which form do you prefer and why?
+
+
+```cpp
+// type alias
+using arrR = std::string [10];
+arrR& funct();
+
+// trailing return
+auto funct() -> std::string(&)[10];
+
+// decltype
+std::string a[10] = { "1","2","3","4","5","6","7","8","9","10"};
+
+decltype(a)& funct();
+
+```
+
+- I like the type alias the best because I'm most familiar with this way of doing it.
+
+
+## Exercise 6.38
+
+> Revise the *arrPtr* function on to return a reference to the array.
+
+
+```cpp
+decltype(odd)& arrPtr(int i)
+{
+	return (i % 2) ? odd : even;
+}
+```
+
 
