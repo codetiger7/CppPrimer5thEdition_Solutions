@@ -721,9 +721,9 @@ isShorter(const string& s1, const string& s2)
 
 **NDEBUG undefined**
 
-<img src="ex6_47/notdef.png" style="width: 300px;"/>
+<img src="ex6_47/not.png" style="width: 300px;"/>
 
-**NDEBUG defined:**
+**NDEBUG defined**
 
 <img src="ex6_47/def.png" style="width: 300px;"/>
 
