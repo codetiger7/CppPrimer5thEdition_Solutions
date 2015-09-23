@@ -719,6 +719,16 @@ isShorter(const string& s1, const string& s2)
 > Compile and runthe program with debugging turned on and again with it turned off.
 
 
+**NDEBUG undefined**
+
+<img src="ex6_47/NDEBUG_NotDefined.png" alt="NDEBUG" style="width: 300px;"/>
+
+**NDEBUG defined:**
+
+<img src="ex6_47/NDEBUG_Defined.png" style="width: 300px;"/>
+
+
+
 
 
 ## Exercise 6.48
@@ -733,7 +743,5 @@ assert(cin);
 ```
 
 
-## [Exercise 6.47](ex6_47/main.cpp)
 
-> add image here
 
