@@ -694,9 +694,46 @@ isShorter(const string& s1, const string& s2)
 > If not, explaing why they should not be inline.
 
 
+## [Exercise 6.46](ex6_46/main.cpp)
+
+> Would it be possible to define *isShorter* as a *constexpr*?
+> If so, do so. If not, explain why not.
+
+- apparently this is wrong - get back to it later
+=========fix
+```cpp
+constexpr bool
+isShorter(const string& s1, const string& s2)
+{
+    return s1.size() < s2.size();
+}
+```
+
+
+=============== fix
+
+
+## [Exercise 6.47](ex6_47/main.cpp)
+
+> Revise the program you wrote in the exercises in § 6.3.2 (p. 228) that used recursion to print the contents of a *vector* to conditionally print information about it's execution. For example, you might print the size of the *vector* on each call.
+> Compile and runthe program with debugging turned on and again with it turned off.
 
 
 
 
+## Exercise 6.48
 
+> Explain what this loop does and whether it is a good use of *assert*:
+
+
+```cpp
+string s;
+while(cin >> s && s != sought) { }	// empty body
+assert(cin);
+```
+
+
+## [Exercise 6.47](ex6_47/main.cpp)
+
+> add image here
 
