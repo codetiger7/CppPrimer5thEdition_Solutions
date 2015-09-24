@@ -729,8 +729,6 @@ isShorter(const string& s1, const string& s2)
 
 
 
-
-
 ## Exercise 6.48
 
 > Explain what this loop does and whether it is a good use of *assert*:
@@ -741,6 +739,9 @@ string s;
 while(cin >> s && s != sought) { }	// empty body
 assert(cin);
 ```
+
+-- no because a false cin return can happen, for example when the reaching EOF or by using ctrl-d.
+
 
 
 
