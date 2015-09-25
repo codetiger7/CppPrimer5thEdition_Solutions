@@ -742,6 +742,76 @@ assert(cin);
 
 -- no because a false cin return can happen, for example when the reaching EOF or by using ctrl-d.
 
+## Exercise 6.49
+
+> What is a candiate function?
+> 
+> What is a viable function?
+
+
+- **A candidate function:** 
+	- Function that has the same name as the function call
+	- The declaration of the function must also be visible from where it is called.
+- **A viable function**
+	- Function that has a number of parameters that match the number of arguments in the function call
+	- The type of each argument must match or be convertible to the parameter in the function
+
+-
+
+
+## [Exercise 6.50](ex6_50/main.cpp)
+
+> Given the declarations for *f* from page 242, list the viable functions, if any for each of the following calls.
+> Indicate which function is the best match, or if the call is illegal whether there is no match or why the call is ambiguous.
+
+
+**(a)**
+*f(2.56, 42)*
+
+**(b)**
+*f(42)*
+
+**(c)**
+*f(42, 0)*
+
+**(d)**
+*f2.56, 3.14)*
+
+
+-
+**Answers:**
+
+**(a)**
+*f(2.56, 42)* - illegal call and it is ambiguous
+- betweenf(int,int) and f(double, double)
+
+**(b)**
+*f(42)* - the call best matches - void f(int)
+
+**(c)**
+*f(42, 0)* - the call best matches - void f(int, int)
+
+**(d)**
+*f(2.56, 3.14)* - best match - void f(double, double)
+
+
+
+## [Exercise 6.51](ex6_51/main.cpp)
+
+> Write all four versions of *f*. Each functions should print a distinguishing message.
+> Check your answers for the previous exercise.
+> If your answers were incorrect, stufy this section until you understand why your answers were wrong.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
