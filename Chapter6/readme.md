@@ -803,6 +803,114 @@ assert(cin);
 > If your answers were incorrect, stufy this section until you understand why your answers were wrong.
 
 
+## Exercise 6.52
+
+> Given the following declarations,
+
+```cpp
+void manip(int, int);
+double dobj;
+```
+> What is the rank (§6.6.1, p. 245) of each conversion in the following calls?
+
+**(a)**
+*manip('a', 'z');*
+
+**(b)**
+*manip(55.4, dobj);*
+
+-
+
+**Answwers:**
+
+**(a)**
+- promotion and promotion
+
+**(b)**
+- both arithmetic conversion
+
+
+
+## Exercise 6.53
+
+> Explain the effect of the second declaration in each of the following sets of declarations.
+> Indicate which, if any are illegal.
+
+**(a)**
+
+*int calc(int&, int&);*
+
+*int calc(const int&, const int&);*
+
+**(b)**
+
+*int calc( char\*, char\*);*
+
+*int calc(const char\*, const char\*);*
+
+**c**
+
+*int calc(char\*, char\*);*
+
+*int calc(char\* const, char\* const);*
+
+-
+
+**Answers:**
+
+**(a)**
+
+- this declaration makes the top const references be an exact match
+- and is preffered for references to const, over the references version of the function.
+ 
+*int calc(const int&, const int&);*
+
+**(b)**
+
+*int calc(const char\*, const char\*);*
+
+- when pointers to constant chars are used in a function call, this is preffered over the funciton that takes non-constant pointers.
+
+**(c)**
+
+- illegal: the second declaration is top level const on pointers. Top level is ignored in a copy of value, therefore the two delcarations are equivalent with regards to argument matching.
+
+
+
+## Exercise 6.54
+
+> Write a declaration for a function that takes two *int* parameters and returns an *int*, and declare a *vector* whose elements have this function pointer type.
+
+
+```cpp
+int function(int, int);
+
+using FP = int(*)(int,int);
+
+std::vector<FP> vec;
+
+```
+
+
+
+## [Exercise 6.55](ex6_55/main.cpp)
+
+> Write four functions that add, subtract, multiply, and divide two *int* values.
+> Store pointers to these functions in your *vector* from the previous exercise.
+
+
+## [Exercise 6.56](ex6_56/main.cpp)
+
+> Call each element in the *vector* and print their result.
+
+
+
+
+
+
+
+
+
 
 
 
