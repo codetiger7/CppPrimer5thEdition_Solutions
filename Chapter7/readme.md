@@ -3,7 +3,7 @@
 > Write a version of the transaction-processing program from § 1.6 (p. 24) using the *Sales_data* class you defined for the exercises § 2.6.1 (p. 72).
 
 
-## [Exercise 7.2](ex7_2/main.cpp)
+## [Exercise 7.2](ex7_2/)
 
 >Add the *combine* and *isbn* members to the *Sales_data* class you wrote for the exercises in § 2.6.2 (p. 76).
 
