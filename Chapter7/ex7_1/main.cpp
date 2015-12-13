@@ -2,28 +2,8 @@
 
 #include <iostream>
 #include <string>
+#include <sales_data.h>
 using namespace std;
-
-struct Sales_data
-{
-    string bookNo_;
-    unsigned unitsSold_ = 0;
-    double revenue_ = 0.0;
-
-
-};
-
-void
-priceIsRight(Sales_data& a, Sales_data& b)
-{
-    a.revenue_ *= a.unitsSold_;
-    b.revenue_ *= b.unitsSold_;
-    a.revenue_ += b.revenue_; // total rev
-
-    a.unitsSold_ += b.unitsSold_; // total units
-
-    a.revenue_ /= a.unitsSold_; // avg price
-}
 
 
 int main()
@@ -53,7 +33,7 @@ int main()
         cout << total.bookNo_ << endl;
         cout << total.unitsSold_ << endl;
         cout << total.revenue_ * total.unitsSold_ << endl;
-            }
+    }
     else
     {
         cerr << "No data?!" << endl;

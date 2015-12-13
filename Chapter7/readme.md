@@ -23,7 +23,7 @@
 
 
 - They should be const
-	- the reason is that they are not changing any class element just reading, this should be signified to the users via const function declaration.
+	- the reason is that they are not changing any class variable just reading, this should be signified to the users via const function declaration.
 
 
 
@@ -31,5 +31,12 @@
 ## [Exercise 7.6](ex7_6/main.cpp)
 
 > Define your own version of the *add*, *read*, and *print* functions.
+> 
+
+
+## [Exercise 7.7](ex7_7/main.cpp)
+
+> Rewrite the transaction-processing program you wrote for the exercises in § 7.1.2 (p. 260) to use these new functions.
+
 
 

@@ -7,8 +7,8 @@ class Person
 {
 public:
 
-    const std::string& getName() const { return name_; }
-    const std::string& getAddress() const { return address_; }
+    inline const std::string& getName() const { return name_; }
+    inline const std::string& getAddress() const { return address_; }
 
 private:
     std::string name_;
