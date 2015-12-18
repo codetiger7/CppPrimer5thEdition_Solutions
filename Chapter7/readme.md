@@ -39,4 +39,31 @@
 > Rewrite the transaction-processing program you wrote for the exercises in § 7.1.2 (p. 260) to use these new functions.
 
 
+## [Exercise 7.8]
+
+> Why does *read* define it's *Sales_data* parameter as a plain reference and *print* define it's parameter as a reference to const?
+
+- *read* changes the class variables so the reference cannot be const
+
+- *print* does not change any of the class variables therefore the reference should be const.
+
+
+## [Exercise 7.9](ex7_9/main.cpp)
+
+> Add operations to read and print *Person* objects to the code you wrote for the exercises in § 7.1.2 (p.260)
+
+
+
+## [Exercise 7.10]
+
+> What does the conditions in the following *if* statements do?
+
+```cpp
+if (read(read(cin, data1), data2))
+```
+
+- It reads in isbn, numbers og books sold and calculates the revenue.
+- it does this into data1, and data2 objects.
+- since the read into data1 returns the istream, this is then used for reading into the data2 object
+
 
