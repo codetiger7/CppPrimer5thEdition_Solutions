@@ -67,3 +67,8 @@ if (read(read(cin, data1), data2))
 - since the read into data1 returns the istream, this is then used for reading into the data2 object
 
 
+## [Exercise 7.11](ex7_11/main.cpp)
+
+> Add constructors to your *Sales_data* class and write a program to use each of the constructors.
+
+
