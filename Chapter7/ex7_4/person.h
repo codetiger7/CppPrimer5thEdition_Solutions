@@ -10,7 +10,7 @@ public:
 private:
     std::string name_;
     std::string address_;
-
 };
 
 #endif // PERSON_H
+
